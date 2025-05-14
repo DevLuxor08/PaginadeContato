@@ -27,87 +27,91 @@
                  <div class="content-base">
                         <!-- Lado Direito  -->
                     <div class="left-informations">
-                            <!-- Titulos das Informações -->
-                        <div class="title-information">
-                            <h2>Informações de Contato</h2>
-                            <h3>Entre em contato Conosco</h3>
-                        </div>
-
-                            <!-- INFORMAÇÔES DE CONTATO -->
-                        <div class="contact-information">
-                            <div class="iterative-information">
-                                <i class="fa-solid fa-phone icon-information"></i> <a href="tel:+551833334444">(18) 3333-4444</a><br>
-                                <i class="fa-brands fa-whatsapp icon-information"></i> <a href="tel:+5518999998888"><i >(18) 99999-8888</i></a>
+                        <div class="container-left">
+                                <!-- Titulos das Informações -->
+                            <div class="title-information">
+                                <h2>Informações de Contato</h2>
+                                <h3>Entre em contato Conosco</h3>
                             </div>
 
-                            <div class="iterative-information">
-                                <i class="fa-solid fa-envelope icon-information"></i>
-                                    <address>
-                                        <a href="mailto:Memoriasdevo@outlook.com">Memoriasdevo@outlook.com</a>
-                                    </address>
+                                <!-- INFORMAÇÔES DE CONTATO -->
+                            <div class="contact-information">
+                                <div class="iterative-information">
+                                    <i class="fa-solid fa-phone icon-information"></i> <a href="tel:+551833334444">(18) 3333-4444</a><br>
+                                    <i class="fa-brands fa-whatsapp icon-information"></i> <a href="tel:+5518999998888"><i >(18) 99999-8888</i></a>
+                                </div>
+
+                                <div class="iterative-information">
+                                    <i class="fa-solid fa-envelope icon-information"></i>
+                                        <address>
+                                            <a href="mailto:Memoriasdevo@outlook.com">Memoriasdevo@outlook.com</a>
+                                        </address>
+                                </div>
+
+                                <div class="iterative-information">
+                                    <i class="fa-solid fa-map-location-dot icon-information"></i>
+                                        <address class="location-text">
+                                            Av. Manoel Goulart Nº 2881, <br>  Vila Santa Helena, <br>Presidente Prudente - SP
+                                        </address>
+                                </div>
                             </div>
 
-                            <div class="iterative-information">
-                                <i class="fa-solid fa-map-location-dot icon-information"></i>
-                                    <address class="location-text">
-                                        Av. Manoel Goulart Nº 2881, <br>  Vila Santa Helena, <br>Presidente Prudente - SP
-                                    </address>
+                                <!-- REDES SOCIAIS -->
+                            <div class="social-media">
+                                <a href="" class="instagram"><i class="fa-brands fa-instagram icon-rede"></i></a>
                             </div>
-                        </div>
-
-                            <!-- REDES SOCIAIS -->
-                        <div class="social-media">
-                            <a href="" class="instagram"><i class="fa-brands fa-instagram icon-rede"></i></a>
                         </div>
                     </div>
 
 
                         <!-- LADO ESQUERDO  -->
-                    <div class="right-information">
+                        <div class="right-information">
+                            <div class="form-container">
+                              <form action="https://usebasin.com/f/58759e3a33e0" method="POST">
+                                <div class="form-group">
+                                  <input type="text" name="name" placeholder="Nome" required />
+                                </div>
+                          
+                                <div class="form-group">
+                                  <input type="text" name="last-name" placeholder="Sobrenome" required />
+                                </div>
+                          
+                                <div class="form-group">
+                                  <input type="email" name="email" placeholder="Endereço de Email" required />
+                                </div>
+                          
+                                <div class="form-group">
+                                  <input type="tel" name="telephone" placeholder="Número de Telefone" required />
+                                </div>
+                          
+                                <div class="form-group">
+                                  <label class="radio-label">Assunto</label>
+                                  <div class="radio-group">
+                                    <label><input type="radio" name="Input" value="INP1" onclick="curriculo(false)"/> Elogios!</label>
+                                    <label><input type="radio" name="Input" value="INP2" onclick="curriculo(false)"/> Reclamações!</label>
+                                    <label><input type="radio" name="Input" value="INP3" onclick="curriculo(true)"/> Parcerias!</label>
+                                  </div>
+                                </div>
 
-                            <!-- FORMULARIO -->
-                        <form action="https://usebasin.com/f/58759e3a33e0" method="POST">
-                            <div class="form-group">
-                              <input type="text" name="name" placeholder="Nome" required />
+                                <div class="form-group" id="uploadArquivo" style="display: none;">
+                                    <label>Envie um anexo:</label>
+                                    <input type="file" name="arquivo" />
+                                  </div>
+                          
+                                <div class="form-group">
+                                  <textarea name="message" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+                                </div>
+                          
+                                <button type="submit">Enviar</button>
+                              </form>
                             </div>
-
-                            <div class="form-group">
-                                <input type="text" name="last-name" placeholder="Sobre Nome" required />
-                            </div>
-
-                            <div class="form-group">
-                              <input type="email" name="email" placeholder="Endereço de Email" required />
-                            </div>
-
-                            <div class="form-group">
-                                <input type="number" name="telephone" placeholder="Numero de Telefone" required />
-                            </div>
-
-                            <div class="form-group">
-                                <p>Tema</p>
-                                <input type="radio" name="Input">INP1
-                                <input type="radio" name="Input">INP2
-                                <input type="radio" name="Input">INP3
-                            </div> 
-
-                            <div class="form-group">
-                              <textarea id="comment" name="btnEnviar" rows="6" placeholder="Write something..." ></textarea>
-                            </div>
-
-                            
-
-                            <button type="submit">
-                              Enviar
-                            </button>
-                          </form>
-                    </div>
+                          </div>
+                          
 
                     <!-- FIM -->
                  </div>
             </section>
         </main>
-
-   
-
+        <script src="./assets/JS/script.js"></script>
 </body>
 </html>
