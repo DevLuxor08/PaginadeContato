@@ -11,6 +11,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/contact.webp), url(../img/cont.webp);
+    background-size:  cover 100px 100px;
+    background-repeat: repeat;
 }
 
 :root{
@@ -22,15 +25,12 @@ body{
     --degrade-a: #E6BE8F;
     --degrade-b: #E6CFA9;
     --degrade-c: #A66F3F;
-
-
 }
 
 /* TODO CONTEUDO DO SITE*/
 .content{
     width: 80vw;
 }
-
 
 .content-section{
     margin-top: 10px;
@@ -64,7 +64,6 @@ body{
     display: flex;
     width: 100%;
     height: 800px;
-
 }
 
 .left-informations{
@@ -77,6 +76,7 @@ body{
     padding-left: 10px;
     background-color: var(--lado-direito);
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .right-information{
@@ -86,6 +86,7 @@ body{
     flex-direction: column;
     width: 70%;
     height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 /* TITULO DA INFORMAÇÂO*/
@@ -93,7 +94,7 @@ body{
     display: flex;
     width: 100%;
     height: 160px;
-    font-size: 20   px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -117,13 +118,11 @@ body{
     height: 100px;
 }
 
-.fa-whatsapp, .fa-phone,.fa-instagram ,.fa-envelope, .fa-map-location-dot{
+.fa-whatsapp, .fa-phone, .fa-instagram, .fa-envelope, .fa-map-location-dot{
     font-size: 40px;
     font-style: none;
     color: var(--icones-texts);
 }
-
-
 
 .location-text{
     font-size: 20px;
@@ -201,7 +200,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 button:hover {
