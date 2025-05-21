@@ -13,6 +13,19 @@ body{
     align-items: center;
 }
 
+:root{
+    --fundo-site:#F4E0BF;
+    --lado-direito:#6E3F1E;
+    --icones-texts:#EBCEA3;
+    --button:#7B4C25;
+
+    --degrade-a: #E6BE8F;
+    --degrade-b: #E6CFA9;
+    --degrade-c: #A66F3F;
+
+
+}
+
 /* TODO CONTEUDO DO SITE*/
 .content{
     width: 80vw;
@@ -20,10 +33,13 @@ body{
 
 
 .content-section{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--fundo-site);
+    border-radius: 30px;
 }
 
 /* TITULO */
@@ -53,12 +69,14 @@ body{
 
 .left-informations{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 40%;
     height: 100%;
     padding-left: 10px;
+    background-color: var(--lado-direito);
+    border-radius: 15px;
 }
 
 .right-information{
@@ -75,11 +93,12 @@ body{
     display: flex;
     width: 100%;
     height: 160px;
+    font-size: 20   px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 30px;
-    background-color: wheat;
+    color: var(--icones-texts);
 }
 
 /* INFORMAÇÔES DE CONTATO */
@@ -87,7 +106,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: wheat;
 }
 
 .iterative-information{
@@ -97,24 +115,24 @@ body{
     margin-bottom: 20px;
     width: 100%;
     height: 100px;
-    background-color: wheat;
 }
 
-.fa-whatsapp, .fa-phone, .fa-envelope, .fa-map-location-dot{
-    font-size: 30px;
+.fa-whatsapp, .fa-phone,.fa-instagram ,.fa-envelope, .fa-map-location-dot{
+    font-size: 40px;
     font-style: none;
+    color: var(--icones-texts);
 }
 
 
 
 .location-text{
     font-size: 20px;
+    color: var(--icones-texts);
 }
 
 .social-media{
     width: 100%;
     height: 180px;
-    background-color: wheat;
     display: flex;
     font-size: 35px;
     margin-top: 10px;
@@ -180,7 +198,6 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #0077cc;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -190,5 +207,3 @@ button {
 button:hover {
     background-color: #005fa3;
 }
-
-
