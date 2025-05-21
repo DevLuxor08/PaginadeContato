@@ -16,17 +16,30 @@ body{
     background-repeat: repeat;
 }
 
+:root{
+    --fundo-site:#F4E0BF;
+    --lado-direito:#6E3F1E;
+    --icones-texts:#EBCEA3;
+    --button:#7B4C25;
+
+    --degrade-a: #E6BE8F;
+    --degrade-b: #E6CFA9;
+    --degrade-c: #A66F3F;
+}
+
 /* TODO CONTEUDO DO SITE*/
 .content{
     width: 80vw;
 }
 
-
 .content-section{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--fundo-site);
+    border-radius: 30px;
 }
 
 /* TITULO */
@@ -51,7 +64,6 @@ body{
     display: flex;
     width: 100%;
     height: 800px;
-
 }
 
 .left-informations{
@@ -62,6 +74,8 @@ body{
     width: 40%;
     height: 100%;
     padding-left: 10px;
+    background-color: var(--lado-direito);
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
@@ -73,7 +87,6 @@ body{
     width: 70%;
     height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    
 }
 
 /* TITULO DA INFORMAÇÂO*/
@@ -81,10 +94,12 @@ body{
     display: flex;
     width: 100%;
     height: 160px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 30px;
+    color: var(--icones-texts);
 }
 
 /* INFORMAÇÔES DE CONTATO */
@@ -103,16 +118,15 @@ body{
     height: 100px;
 }
 
-.fa-whatsapp, .fa-phone, .fa-envelope, .fa-map-location-dot{
+.fa-whatsapp, .fa-phone, .fa-instagram, .fa-envelope, .fa-map-location-dot{
     font-size: 40px;
     font-style: none;
-    color: #4e2c06;
+    color: var(--icones-texts);
 }
-
-
 
 .location-text{
     font-size: 20px;
+    color: var(--icones-texts);
 }
 
 .social-media{
@@ -183,15 +197,11 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #0077cc;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
 }
 
 button:hover {
     background-color: #005fa3;
 }
-
-
